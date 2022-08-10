@@ -28,7 +28,7 @@ __decl_op(WRITE_FLOAT_TO_INI_FILE, 0x0AF3); // 0AF3=4,write_float %1d% to_ini_fi
 __decl_op(READ_STRING_FROM_INI_FILE, 0x0AF4); // 0AF4=4,%4d% = read_string_from_ini_file %1s% section %2s% key %3s%
 __decl_op(WRITE_STRING_TO_INI_FILE, 0x0AF5); // 0AF5=4,write_string %1s% to_ini_file %2s% section %3s% key %4s%
 
-std::string sGameRoot = "/sdcard/cleo/sa/";
+std::string sGameRoot = "/storage/emulated/0/Android/data/com.rockstargames.gtasa/files";
 static char szConvertedValue[16];
 
 void READ_INT_FROM_INI_FILE(__handler_params)
