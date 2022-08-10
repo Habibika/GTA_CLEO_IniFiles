@@ -1,5 +1,9 @@
 NDK_PROJECT_PATH=$(pwd)
-NDKPATH=$(cat $NDK_PROJECT_PATH/ndkpath.txt)
+read -p 'Enter NDK dir: ' NDKPATH
+if [ ! -e "$NDKPATH/build/ndk-build" ]; then
+    echo 'Error: Invalid NDK!'
+    exit 1
+fi
 echo "NDK located at: $NDKPATH"
 
 BUILDSCRIPT="$NDKPATH/build/ndk-build"
