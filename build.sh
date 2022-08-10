@@ -1,3 +1,5 @@
+#!/bin/bash
+
 NDK_PROJECT_PATH=$(pwd)
 read -p 'Enter NDK dir: ' NDKPATH
 if [ ! -e "$NDKPATH/build/ndk-build" ]; then
